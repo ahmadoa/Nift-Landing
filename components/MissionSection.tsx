@@ -23,7 +23,7 @@ export default function MissionSection() {
                 </div>
             </div>
             <div className="row-span-1 lg:col-span-3 flex flex-col">
-            <Accordion type="multiple" collapsible="true">
+            <Accordion type="multiple">
                 {accordionData.map((item) => (
                     <AccordionItem key={item.id} value={item.id}>
                     <AccordionTrigger>
