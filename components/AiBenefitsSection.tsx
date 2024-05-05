@@ -2,7 +2,7 @@ import {aiBenifits} from "@/helpers/AiBenefits";
 
 export default function AiBenefitsSection (){
     return (
-        <section className="h-[180vh] lg:h-[110vh] w-full bg-black relative">
+        <section className="h-[300vh] lg:h-[110vh] w-full bg-black relative">
             <div className="absolute z-0 w-full h-full inset-0">
                 <video autoPlay muted loop className="w-full h-full object-cover">
                     <source src="/videos/roadmap-video.mp4" type="video/mp4"/>
@@ -18,9 +18,11 @@ export default function AiBenefitsSection (){
                             <h1 className="font-monument text-xl text-white uppercase">{item.title}</h1>
                             <p className="text-white text-xs">{item.description}</p>
                         </div>
-                        <div className="row-span-5 lg:row-span-1 col-span-1 overflow-hidden relative">
+                        <div className="row-span-5 lg:row-span-1 overflow-hidden relative">
                         <span className="absolute z-10 w-full h-full inset-0 bg-gradient-to-b from-Purple to-Blue mix-blend-overlay"/>
-                            <img src={item.path} className="w-full h-full object-cover"/>
+                            
+                
+                                <img alt={item.title} src={item.path} className="w-full h-full object-cover"/>
                         </div>
                     </div>
                 )

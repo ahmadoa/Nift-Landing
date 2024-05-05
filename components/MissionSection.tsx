@@ -3,8 +3,8 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-  } from "@/components/ui/accordion"
-  import {accordionData} from "@/helpers/accordionData"
+} from "@/components/ui/accordion"
+import {accordionData} from "@/helpers/accordionData"
 
 export default function MissionSection() {
     return (
@@ -19,11 +19,11 @@ export default function MissionSection() {
                     </p>
                 </div>
                 <div className="flex justify-end overflow-hidden">
-                    <img src="/images/mission.png" alt="mission" className="h-72" />
+                    <img alt="mission img" src="/images/mission.png" className="min-w-52 h-72" />
                 </div>
             </div>
             <div className="row-span-1 lg:col-span-3 flex flex-col">
-            <Accordion type="multiple" collapsible>
+            <Accordion type="multiple" collapsible="true">
                 {accordionData.map((item) => (
                     <AccordionItem key={item.id} value={item.id}>
                     <AccordionTrigger>
