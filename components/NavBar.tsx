@@ -9,11 +9,11 @@ import { useRef } from 'react';
 
 export default function NavBar() {
 
-    const drawerRef = useRef(null);
+    const drawerRef = useRef<HTMLInputElement>(null);
 
     const handleLabelClick = () => {
         if (drawerRef.current) {
-            (drawerRef.current as HTMLInputElement).click();
+            drawerRef.current.click();
         }
     };
 
